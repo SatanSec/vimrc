@@ -81,3 +81,6 @@ filetype plugin indent on
 "NERDTree config
 map <C-n> :NERDTreeToggle<CR>
 "autocmd vimenter * NERDTree
+
+"ycm预览窗口离开插入模式后自动关闭
+autocmd InsertLeave * if pumvisible()==0|pclose|endif
