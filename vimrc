@@ -67,12 +67,25 @@ filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
+"vim bundle
 Bundle 'gmarik/vundle'
+
+"auto complement
 Bundle 'Valloric/YouCompleteMe'
-"Bundle 'Raimondi/delimitMate'
+
+"syntax checking
 Bundle 'scrooloose/syntastic'
+
+"Insert or delete brackets, parens, quotes in pair
 Bundle 'jiangmiao/auto-pairs'
+
+"explorer
 Bundle 'scrooloose/nerdtree'
+
+"commenter
+Bundle 'scrooloose/nerdcommenter'
+
+"xdebug for php
 Bundle 'vim-scripts/Xdebug'
 
 filetype plugin indent on
@@ -84,3 +97,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 "ycm预览窗口离开插入模式后自动关闭
 autocmd InsertLeave * if pumvisible()==0|pclose|endif
+
+"ycmd配置文件
+let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
+let g:ycm_confirm_extra_conf=0
