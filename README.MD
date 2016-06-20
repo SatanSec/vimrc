@@ -1,7 +1,13 @@
 ##My personal vim configuration
 You should install vundle before you use it.
 
-[install vundle](http://www.0x2c.cn/home/article/detail/aid/14.html)
+###Install Vundle
+```shell
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 
+###Install Plugins
+copy this file to your configuration and run `:PluginInstall`
 
-copy this file to your configuration and run `:BundleInstall`
+###Others
+If u want to use ycm, u have to install it.[https://github.com/Valloric/YouCompleteMe#installation](https://github.com/Valloric/YouCompleteMe#installation)
